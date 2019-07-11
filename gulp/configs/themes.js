@@ -1,10 +1,10 @@
 module.exports = {
-  "Hibrido": {
-    "locale": "en_US",
+  "Theme": {
+    "locale": "Linguagem",
     "lang": "less",
     "area": "frontend",
-    "vendor": "Hibrido",
-    "name": "default",
+    "vendor": "vendor",
+    "name": "name-theme",
     "files": [
       "css/styles-m",
       "css/styles-l"
