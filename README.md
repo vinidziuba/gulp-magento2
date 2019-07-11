@@ -72,7 +72,7 @@ module.exports = {
 
 * Execute o comando <code>gulp theme</code> .
 
-	Algunas comandos adicionais
+	Alguns comandos adicionais
 	
 	* <code>gulp less [--Theme-name]</code>
 	* <code>gulp watch [--Theme-name]</code>
