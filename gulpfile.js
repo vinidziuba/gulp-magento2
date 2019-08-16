@@ -14,7 +14,8 @@ const gulp = require('gulp'),
     sourcemap = require('gulp-sourcemaps'),
     stylelint = require('gulp-stylelint'),
     eslint = require('gulp-eslint'),
-    image = require('gulp-image');
+    image = require('gulp-image'),
+    watch = require('gulp-watch');
 
 /* Configs */
 const themesConfig = require('./dev/tools/gulp/configs/themes'),
@@ -113,8 +114,8 @@ gulp.task('clean:cache', function () {
     ];
 
     return gulp.src(cacheFoldersToClean, {
-            read: false
-        })
+        read: false
+    })
         .pipe(clean())
         .pipe(gutil.buffer(() => {
             gutil.log(chalk.green('Cache cleaned: var/page_cache/ var/cache/ /var/di/ /var/generation/'));
@@ -126,8 +127,8 @@ gulp.task('clean:cache', function () {
  */
 gulp.task('clean:static', () => {
     return gulp.src(folderToClean, {
-            read: false
-        })
+        read: false
+    })
         .pipe(clean())
         .pipe(gutil.buffer(() => {
             gutil.log(chalk.blue('Clean ' + staticFolder));
@@ -201,6 +202,10 @@ gulp.task('serve', () => {
     gulp.watch(['pub/static/frontend/' + theme.vendor + '/' + theme.name + '/**/*.less'], gulp.series('less'));
 });
 
+gulp.task('watch', function () {
+    gulp.watch(['pub/static/frontend/' + theme.vendor + '/' + theme.name + '/**/*.less'], gulp.series('less'));
+
+});
 /**
  * Task sequences
  */
