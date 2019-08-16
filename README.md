@@ -13,7 +13,7 @@ git clone https://github.com/vinidziuba/gulp-magento2.git
 ## 2. Instalação de arquivos no projeto magento 2
 
 
-* Mova o arquivo <strong>gruntfile.js</strong> na pasta raiz do projeto.
+* Mova o arquivo <strong>gulpfile.js</strong> na pasta raiz do projeto.
 
 * Substitua o arquivo <strong>package.json</strong> na raiz do projeto pelo do repositório.
 
