@@ -17,7 +17,7 @@ git clone https://github.com/vinidziuba/gulp-magento2.git
 
 * Substitua o arquivo <strong>package.json</strong> na raiz do projeto pelo do repositório.
 
-* Mova a pasta <em>gulp</em> para dentro de <strong>app/dev/tools</strong>.
+* Mova a pasta <em>gulp</em> para dentro de <strong>dev/tools</strong>.
 
 * Dentro da pasta do projeto rode o comando <code> npm install </code>.
 
